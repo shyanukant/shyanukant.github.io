@@ -2,55 +2,64 @@
 
 .aboutme {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100%;
-    width: 60%;
     margin: auto;
+    background-color: #111133;
 
-    h2{
-        
-        font-size: 55px;
-        margin: 30px;
-        color: orange;
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+        margin: auto;
 
-        @include laptop{
+
+        h2 {
+
             font-size: 55px;
-        }
-
-        @include tablet {
-            font-size: 45px;
-        }
-
-        @include mobile{
-            font-size: 30px;
-        }
-    }
-    p {
-        @include laptop{
-            font-size: x-large;
-        }
-
-        @include tablet {
-            font-size: large;
-        }
-
-        @include mobile{
-            font-size: medium;
-            ;
-        }
-
-        b {
+            margin: 30px;
             color: orange;
-            font-style: italic;
+
+            @include laptop {
+                font-size: 55px;
+            }
+
+            @include tablet {
+                font-size: 45px;
+            }
+
+            @include mobile {
+                font-size: 30px;
+            }
         }
+
+        p {
+            @include laptop {
+                font-size: x-large;
+            }
+
+            @include tablet {
+                font-size: large;
+            }
+
+            @include mobile {
+                font-size: medium;
+                ;
+            }
+
+            b {
+                color: orange;
+                font-style: italic;
+            }
+        }
+
+        
     }
-    .slidingTextContainer{
+    .slidingTextContainer {
         position: absolute;
-        font-size: 45vh;
-        bottom: -450px;
+        font-size: 42vh;
         white-space: nowrap;
         color: #58585828;
         font-weight: bold;
