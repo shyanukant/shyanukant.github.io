@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+body{
+    background-color: rgb(16, 16, 28);
+    color: lightgray;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin mobile2 {
+    @media (max-width: 320px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 738px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: 1280px){
+        @content;
+    }
+}

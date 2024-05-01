@@ -1,0 +1,44 @@
+[
+    {
+            "id": 1,
+            "title": "Social Media Content Creator",
+            "img": "https://source.unsplash.com/featured/?ai",
+            "desc": "This application is designed to empower users in generating content for multiple social media platforms, complete with customized images featuring their logo, website, and handle. Users can establish their brand identity before easily creating compelling content.",
+            "url":"https://github.com/shyanukant/toolverse"
+    },
+    {
+            "id": 2,
+            "title": "Flask Web (Portfolio)",
+            "img": "https://source.unsplash.com/featured/?web",
+            "desc": "A dynamic website(resume) crafted through the Flask Framework, complemented by HTML, CSS, and JavaScript.",
+            "url": "https://github.com/shyanukant/Portfolio"
+    },
+    {
+            "id": 3,
+            "title": "Tweet app(Squib)",
+            "img": "https://source.unsplash.com/featured/?content",
+            "desc": "Squib is a robust full-stack web application . Built with Django, Django Rest Framework, React.js, and styled with Tailwind CSS, Squib allows users to create, share, like, follow, unfollow, and retweet tweets. ",
+            "url": "https://github.com/shyanukant/Squib"
+    },
+    {
+            "id": 4,
+            "title": "Clothes Store",
+            "img": "https://source.unsplash.com/featured/?clothes-store",
+            "desc": "This innovative web application is built on a solid tech stack, featuring Next.js for front-end development, Medusa.js for e-commerce capabilities, and a reliable back-end powered by Node.js and PostgreSQL.",
+            "url": "https://github.com/shyanukant/geekWearStore-Medusa"
+    },
+    {
+            "id": 5,
+            "title": "House Price Prediction",
+            "img": "https://source.unsplash.com/featured/?house",
+            "desc": "This is a machine learning model developed using supervised learning techniques, specifically the Random Forest Regression algorithm.",
+            "url": "https://github.com/shyanukant/housePrice"
+    },
+    {
+            "id": 6,
+            "title": "Resume",
+            "img": "https://source.unsplash.com/featured/?resume",
+            "desc": "Presenting my static online resume, meticulously crafted using a combination of HTML, CSS, and JavaScript. This resume is hosted on GitHub, making it easily accessible and shareable.",
+            "url": "https://github.com/shyanukant/shyanukant.github.io"
+    }
+]

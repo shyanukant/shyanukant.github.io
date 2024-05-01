@@ -1,0 +1,59 @@
+@import "../../App.scss";
+
+.aboutme {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+
+    h2{
+        
+        font-size: 55px;
+        margin: 30px;
+        color: orange;
+
+        @include laptop{
+            font-size: 55px;
+        }
+
+        @include tablet {
+            font-size: 45px;
+        }
+
+        @include mobile{
+            font-size: 30px;
+        }
+    }
+    p {
+        @include laptop{
+            font-size: x-large;
+        }
+
+        @include tablet {
+            font-size: large;
+        }
+
+        @include mobile{
+            font-size: medium;
+            ;
+        }
+
+        b {
+            color: orange;
+            font-style: italic;
+        }
+    }
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 45vh;
+        bottom: -450px;
+        white-space: nowrap;
+        color: #58585828;
+        font-weight: bold;
+        width: 50%;
+    }
+}
