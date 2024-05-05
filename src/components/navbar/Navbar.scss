@@ -44,14 +44,15 @@
         display: flex;
         gap: 20px;
 
-        a img {
-            height: 4vh;
-            width: 4vw;
+        a{
+            size: 2vw;
+            color: greenyellow;
 
 
             @include laptop{
                 height: 35px;
                 width: 35px;
+                
             }
         }
     }

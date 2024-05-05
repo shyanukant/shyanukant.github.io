@@ -3,8 +3,13 @@
 .aboutme {
 
     height: 100%;
+    height: 100%;
     margin: auto;
-    background-color: #111133;
+    background-color: #11331c6e;
+    overflow-x: hidden;
+    position: relative;
+
+    
 
     .aboutContainer {
         display: flex;
@@ -20,7 +25,7 @@
 
             font-size: 55px;
             margin: 30px;
-            color: orange;
+            color: greenyellow;
 
             @include laptop {
                 font-size: 55px;
@@ -50,19 +55,18 @@
             }
 
             b {
-                color: orange;
+                color: greenyellow;
                 font-style: italic;
             }
         }
 
         
     }
-    .slidingTextContainer {
+    .slidingContainer {
         position: absolute;
         font-size: 42vh;
         white-space: nowrap;
         color: #58585828;
-        font-weight: bold;
         width: 50%;
     }
 }

@@ -59,7 +59,7 @@
         }
 
         .phoneSvg{
-            stroke: orange;
+            stroke: greenyellow;
             position: absolute;
             margin: auto;
             z-index: -1;
@@ -89,13 +89,18 @@
         button{
             padding: 20px;
             border: none;
-            background-color: orange;
+            background-color: greenyellow;
             font-weight: 500;
             cursor: pointer;
 
             @include mobile{
                 padding: 10px;
             }
+        }
+        button:hover{
+            background-color: #0d140f;
+            color: greenyellow;
+            border: 1px solid greenyellow;
         }
 
     }
