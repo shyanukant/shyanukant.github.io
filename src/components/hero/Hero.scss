@@ -55,7 +55,7 @@
                 }
 
                 @include laptop{
-                    font-size: 62px;
+                    font-size: 60px;
                 }
             }
 
@@ -71,6 +71,11 @@
                     margin-right: 20px;
                     cursor: pointer;
                     font-weight: 300;
+
+                    @include mobile{
+                        padding: 16px;
+                        margin-right: 10px;
+                    }
                     
                 }
                 a:hover{

@@ -65,7 +65,8 @@ const Contact = () => {
                 <motion.div className="phoneSvg"
                     initial={{ opacity: 1 }}
                     whileInView={{ opacity: 0 }}
-                    transition={{ delay: 3, duration: 1 }}>
+                    transition={{ delay: 3, duration: 1 }}
+                    >
                     <svg viewBox="0 0 512 512" >
 
                         <motion.path
