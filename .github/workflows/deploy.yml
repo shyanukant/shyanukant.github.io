@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+# Trigger the workflow on push events to the main branch
+on: 
+  push:
+    branches: [ main ]
+
+# Set permissions for the workflow
+permissions:
+  contents: read  # Allows reading repository contents
+  pages: write    # Allows writing to GitHub Pages
+  id-token: write # Allows writing ID tokens
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Use the latest Ubuntu runner
+    environment:
+      name: production # Set the environment to production
+    
+    env:
+      APP_SERVICE_ID: ${{ secrets.APP_SERVICE_ID }} # Mail app service ID
+      APP_TEMPLATE_ID: ${{ secrets.APP_TEMPLATE_ID }} # Mail app template ID
+      APP_PUBLIC_KEY: ${{ secrets.APP_PUBLIC_KEY }} # Mail app public key
+
+    steps:
+      - name: Checkout Source  
+        uses: actions/checkout@v4 # Checkout the repository source code
+
+      - name: Setup Node
+        uses: actions/setup-node@v4 # Setup Node.js environment
+        with:
+            node-version: 20 # Specify Node.js version 20
+
+      - name: Install Dependencies
+        run: npm ci # Install project dependencies
+
+      - name: Build Project
+        run: npm run build # Build the project
+
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact@v3 # Upload build artifacts for GitHub Pages
+        with:
+           name: 'github-pages' # Name of the artifact
+           path: dist # Path to the build output directory
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4 # Deploy the artifacts to GitHub Pages
+        with: 
+          token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for authentication
+          artifact_name: 'github-pages' # Name of the artifact to deploy
