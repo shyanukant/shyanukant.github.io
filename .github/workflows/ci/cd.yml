@@ -60,25 +60,34 @@ jobs:
           output_location: "dist" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
+      # Step to build and deploy to GitHub Pages
       - name: Build and deploy to Github Pages
         if: ${{ github.event.inputs.deploy_target == 'github-pages' }}
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '20' # Specify the Node.js version to use
+
+      # Step to install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: npm ci # Use npm ci to install dependencies based on package-lock.json
+
+      # Step to build the project
       - name: Build
-        run: npm run build
+        run: npm run build # Run the build script defined in package.json
+
+      # Step to upload the build artifacts for deployment
       - name: Upload artifact for deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          name: 'github-pages'
-          path: ./dist
+          name: 'github-pages' # Name of the artifact
+          path: ./dist # Path to the build output directory
+
+      # Step to deploy the uploaded artifact to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_name: 'github-pages'
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub token for authentication
+          artifact_name: 'github-pages' # Name of the artifact to deploy
 
   close_pull_request_job:
     # This job runs when a pull request is closed.
