@@ -1,5 +1,7 @@
 import "./Aboutme.scss"
 import IconSlider from "./IconSlider"
+// import "./aboutme2.scss"
+import IconSlider2 from "./IconSlider2"
 
 const Aboutme = () => {
     return (
@@ -21,9 +23,12 @@ const Aboutme = () => {
                 </p>
 
             </div>
-            <IconSlider sliderClassName="slidingContainer" bottomSize="300px"/>
-            <IconSlider sliderClassName="slidingContainer" bottomSize="0px"/>
-            
+            <IconSlider sliderClassName="slidingContainer" bottomSize="300px" direction="left"/> */
+            <IconSlider sliderClassName="slidingContainer" bottomSize="0px" direction="right"/>
+            {/* /* background sliders
+            <IconSlider2 className="slidingContainer" bottom="300px" direction="left"/>
+            <IconSlider2 className="slidingContainer" bottom="0px" direction="right"/> */}
+
         </div>
     )
 }

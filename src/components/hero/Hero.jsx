@@ -60,8 +60,16 @@ const Hero = () => {
                 variants={slideVariants} initial="initial" animate="animate">
                 Devloper Designer Editor Creator
             </motion.div>
-            <div className="imageContainer">
-                <img src="pic.png" alt="hero image" />
+            <div className="imageContainer ">
+                {/* <img src="pic.png" alt="hero image" /> */}
+                <motion.img
+                    className="floating"
+                    src="pic2.png"
+                    alt="hero image"
+                    initial={{ y: 0 }}
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                />
             </div>
         </div>
     )
