@@ -1,7 +1,6 @@
 import "./Aboutme.scss"
 import IconSlider from "./IconSlider"
-// import "./aboutme2.scss"
-import IconSlider2 from "./IconSlider2"
+
 
 const Aboutme = () => {
     return (
