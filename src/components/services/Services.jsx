@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./Services.scss";
 import { motion, useInView } from "framer-motion";
+import servicesData from "../data.json";
 
 const variants = {
     initial: {
@@ -19,7 +20,7 @@ const variants = {
 }
 
 const Services = () => {
-
+    const services = servicesData.services;
     const ref = useRef();
 
     const isInView = useInView(ref, {
@@ -53,36 +54,19 @@ const Services = () => {
                     <h1>
                         <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
                     </h1>
-                    <button> WHAT WE DO?</button>
+                    <button> WHAT I DO?</button>
                 </div>
             </motion.div>
             <motion.div className="listContainer" variants={variants}>
-                <motion.div className="box"initial={{ background: "rgba(0, 0, 0, 0)", color: "white" }}                    whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quisquam similique veritatis autem aliquid fuga laborum saepe rem magnam obcaecati. Perspiciatis, consequatur aliquam? Ipsa neque minima laudantium, sequi quaerat tempora ad expedita inventore veritatis velit fugiat, consequuntur veniam labore consequatur?</p>
-                    <button>Go</button>
-                </motion.div>
-                <motion.div className="box"
-                initial={{ background: "rgba(0, 0, 0, 0)", color: "white" }}
-                    whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quisquam similique veritatis autem aliquid fuga laborum saepe rem magnam obcaecati. Perspiciatis, consequatur aliquam? Ipsa neque minima laudantium, sequi quaerat tempora ad expedita inventore veritatis velit fugiat, consequuntur veniam labore consequatur?</p>
-                    <button>Go</button>
-                </motion.div>
-                <motion.div className="box"
-                    initial={{ background: "rgba(0, 0, 0, 0)", color: "white" }}
-                    whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quisquam similique veritatis autem aliquid fuga laborum saepe rem magnam obcaecati. Perspiciatis, consequatur aliquam? Ipsa neque minima laudantium, sequi quaerat tempora ad expedita inventore veritatis velit fugiat, consequuntur veniam labore consequatur?</p>
-                    <button>Go</button>
-                </motion.div>
-                <motion.div className="box"
-                    initial={{ background: "rgba(0, 0, 0, 0)", color: "white" }}
-                    whileHover={{ background: "lightgray", color: "black" }}>
-                    <h2>Branding</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quisquam similique veritatis autem aliquid fuga laborum saepe rem magnam obcaecati. Perspiciatis, consequatur aliquam? Ipsa neque minima laudantium, sequi quaerat tempora ad expedita inventore veritatis velit fugiat, consequuntur veniam labore consequatur?</p>
-                    <button>Go</button>
-                </motion.div>
+                {services.map((service, index) => (
+                    <motion.div className="box" key={index} initial={{ background: "rgba(0, 0, 0, 0)", color: "white" }} whileHover={{ background: "lightgray", color: "black" }}>
+                        <h2>{service.title}</h2>
+                        <p>{service.description}</p>
+                        {/* <button>Go</button> */}
+                        <a className="btn" href="#Contact">Go</a>
+                    </motion.div>
+                ))}
+                
             </motion.div>
         </motion.div>
     )

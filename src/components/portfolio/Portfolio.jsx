@@ -19,11 +19,11 @@ const Single = ({ item }) => {
                     <div className="imageContainer" ref={ref}>
                         <img src={item.img} alt="Project Image" />
                     </div>
-                    <motion.div  className="textContainer" style={{ y }} >
+                    <motion.div className="textContainer" style={{ y }} >
                         <h2 >{item.title}</h2>
                         <p>{item.desc}</p>
                         <a href={item.url} target="_blank">See Project</a>
-                        
+
                     </motion.div>
                 </div>
             </div>
@@ -34,7 +34,7 @@ const Single = ({ item }) => {
 
 const Portfolio = () => {
     const ref = useRef();
-
+    const projects = portfolioData.projects;
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["end end", "start start"],
@@ -54,7 +54,7 @@ const Portfolio = () => {
                     className="progressBar">
                 </motion.div>
             </div>
-            {portfolioData.map((item) => (
+            {projects.map((item) => (
                 <Single key={item.id} item={item} />
             ))}
         </div>
