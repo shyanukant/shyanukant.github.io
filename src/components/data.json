@@ -1,54 +1,63 @@
 {
         "projects": [
                 {
-                        "id": 1,
-                        "title": "Auto to Text API",
-                        "img": "projectImage/audio-text.jpeg",
-                        "desc": "An audio-to-text conversion API using FastAPI with the Whixper model from OpenAI. I've integrated Gmail login for sending transcribed text files, and I'm implementing FastAPI token authentication, Pedantic schema, and Alembic for database migration.",
-                        "url": "https://github.com/shyanukant/transcribeapi"
+                        "id": 9,
+                        "title": "Mediawali: High-Traffic News Portal",
+                        "img": "projectImage/mediawali.png",
+                        "desc": "A high-performance news and media platform optimized for speed and SEO. Built with a custom CMS architecture to handle rapid content publishing and large-scale concurrent user traffic. Tech Stack: WordPress, Custom PHP, Advanced Custom Fields (ACF).",
+                        "url": "https://mediawali.com/"
                 },
                 {
-                        "id": 2,
+                        "id": 8,
+                        "title": "Solar Connect India: Enterprise Service Portal",
+                        "img": "projectImage/solarconnectindia.png",
+                        "desc": "A comprehensive service platform for the solar energy sector. Features a Custom Solar Management Plugin built from scratch to track technical project specifications, lead lifecycles, and installation metrics. Tech Stack: WordPress, PHP (Custom Plugin Dev), JavaScript, MySQL.",
+                        "url": "https://solarconnectindia.in/"
+                },
+                {
+                        "id": 7,
+                        "title": "Print-on-Demand E-commerce Engine",
+                        "img": "projectImage/printepalette.png",
+                        "desc": "A specialized e-commerce platform developed for Hatwaliya. It features a custom design-upload module, automated order processing logic, and secure payment gateway integration for a seamless \"design-to-delivery\" workflow. Tech Stack: Django, ReactJS, PostgreSQL, Razorpay API.",
+                        "url": "https://github.com/shyanukant/hidigitalecommerce"
+                },
+                
+                {
+                        "id": 6,
+                        "title": "Intelligent WhatsApp Business Agent",
+                        "img": "projectImage/waflow.png",
+                        "desc": "A production-ready WhatsApp AI agent LLM and custom data to automate customer support. It handles intelligent query resolution and schedules tasks without human intervention. Tech Stack: React, Express.js, Openrouter, Pinecore, Wasender, Supabase, Flutterwave Payment gatewate, Replit.",
+                        "url": ""
+                },
+                {
+                        "id": 5,
+                        "title": "Autonomous AI Voice Agent Workflow",
+                        "img": "",
+                        "desc": "An advanced automation system designed to handle real-time lead qualification. It uses voice-to-text and LLM processing to interact with customers, qualify potential leads, and automatically book appointments in a CRM. Tech Stack: n8n, OpenAI Whisper, Gemini API, Webhooks.",
+                        "url": ""
+                },
+                {
+                        "id": 4,
+                        "title": "Clothes Store",
+                        "img": "projectImage/clothes-store.jpeg",
+                        "desc": "This innovative web application is built on a solid tech stack, featuring Next.js for front-end development, Medusa.js for e-commerce capabilities, and a reliable back-end powered by Node.js and PostgreSQL.",
+                        "url": "https://github.com/shyanukant/geekWearStore-Medusa"
+                },
+                {
+                        "id": 3,
                         "title": "Social Media Content Creator",
                         "img": "projectImage/social-media.jpeg",
                         "desc": "This application is designed to empower users in generating content for multiple social media platforms, complete with customized images featuring their logo, website, and handle. Users can establish their brand identity before easily creating compelling content.",
                         "url": "https://github.com/shyanukant/toolverse"
                 },
                 {
-                        "id": 3,
-                        "title": "Flask Web (Portfolio)",
-                        "img": "projectImage/portfolio.jpeg",
-                        "desc": "A dynamic website(resume) crafted through the Flask Framework, complemented by HTML, CSS, and JavaScript.",
-                        "url": "https://github.com/shyanukant/Portfolio"
-                },
-                {
-                        "id": 4,
-                        "title": "Tweet app(Squib)",
-                        "img": "projectImage/tweet-app.jpeg",
-                        "desc": "Squib is a robust full-stack web application . Built with Django, Django Rest Framework, React.js, and styled with Tailwind CSS, Squib allows users to create, share, like, follow, unfollow, and retweet tweets. ",
-                        "url": "https://github.com/shyanukant/Squib"
-                },
-                {
-                        "id": 5,
-                        "title": "House Price Prediction",
-                        "img": "projectImage/home.png",
-                        "desc": "This is a machine learning model developed using supervised learning techniques, specifically the Random Forest Regression algorithm.",
-                        "url": "https://github.com/shyanukant/housePrice"
-                },
-                {
-                        "id": 6,
-                        "title": "Resume",
-                        "img": "projectImage/resume.jpg",
-                        "desc": "Presenting my static online resume, meticulously crafted using a combination of HTML, CSS, and JavaScript. This resume is hosted on GitHub, making it easily accessible and shareable.",
-                        "url": "https://github.com/shyanukant/shyanukant.github.io"
-                },
-                {
-                        "id": 7,
-                        "title": "Clothes Store",
-                        "img": "projectImage/clothes-store.jpeg",
-                        "desc": "This innovative web application is built on a solid tech stack, featuring Next.js for front-end development, Medusa.js for e-commerce capabilities, and a reliable back-end powered by Node.js and PostgreSQL.",
-                        "url": "https://github.com/shyanukant/geekWearStore-Medusa"
+                        "id": 2,
+                        "title": "Auto to Text API",
+                        "img": "projectImage/audio-text.jpeg",
+                        "desc": "An audio-to-text conversion API using FastAPI with the Whixper model from OpenAI. I've integrated Gmail login for sending transcribed text files, and I'm implementing FastAPI token authentication, Pedantic schema, and Alembic for database migration.",
+                        "url": "https://github.com/shyanukant/transcribeapi"
                 }
+               
         ],
         "services": [
                 {
