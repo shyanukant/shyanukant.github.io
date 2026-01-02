@@ -29,13 +29,7 @@
                         "desc": "A production-ready WhatsApp AI agent LLM and custom data to automate customer support. It handles intelligent query resolution and schedules tasks without human intervention. Tech Stack: React, Express.js, Openrouter, Pinecore, Wasender, Supabase, Flutterwave Payment gatewate, Replit.",
                         "url": ""
                 },
-                {
-                        "id": 5,
-                        "title": "Autonomous AI Voice Agent Workflow",
-                        "img": "",
-                        "desc": "An advanced automation system designed to handle real-time lead qualification. It uses voice-to-text and LLM processing to interact with customers, qualify potential leads, and automatically book appointments in a CRM. Tech Stack: n8n, OpenAI Whisper, Gemini API, Webhooks.",
-                        "url": ""
-                },
+        
                 {
                         "id": 4,
                         "title": "Clothes Store",
